@@ -24,25 +24,25 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     //MARK: - UIScrollViewDelegate
     
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let p = "Начинаеться прокрутка"
-//        print(p)
-//        print(scrollView.contentOffset.y)
-//        myScrollView.alpha = 0.50
-//    }
-//
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        let p = "вызывается после прокрутки"
-//        print(p)
-//        myScrollView.alpha = 1.0
-//    }
-//
-//    func scrollViewDidEndDragging(_ scrolIView: UIScrollView, willDecelerate decelerate: Bool) {
-//        let p = "Гарантирует что вернет альфу к 1"
-//        print(p)
-//        self.myScrollView.alpha = 1.0
-//
-//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let p = "Начинаеться прокрутка"
+        print(p)
+        print(scrollView.contentOffset.y)
+        myScrollView.alpha = 0.50
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let p = "вызывается после прокрутки"
+        print(p)
+        myScrollView.alpha = 1.0
+    }
+
+    func scrollViewDidEndDragging(_ scrolIView: UIScrollView, willDecelerate decelerate: Bool) {
+        let p = "Гарантирует что вернет альфу к 1"
+        print(p)
+        self.myScrollView.alpha = 1.0
+
+    }
     
     
     func createScrollView() {

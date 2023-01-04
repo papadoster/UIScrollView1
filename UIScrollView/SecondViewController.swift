@@ -8,7 +8,7 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
     var myScrollView = UIScrollView()
     
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class SecondViewController: UIViewController {
         let macImageView = self.newImageViewWithImage(image: macImage!, frame: imageViewRect)
         myScrollView.addSubview(macImageView)
     }
-
+    
     
     func newImageViewWithImage(image: UIImage, frame: CGRect) -> UIImageView {
         
